@@ -1,0 +1,417 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+/*
+font-family: 'Roboto', sans-serif;*/
+body{
+    background-color: #5abef4;
+    /*max-width: 1100px;*/
+    margin: 0 auto;
+   /* background-color: #757272*/;
+
+   font-family: 'Roboto', sans-serif;*/
+}
+/*****************************************************************************/
+/*MOBILE FIRST*/
+@media screen and (max-width: 640px){   
+     .head__img{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+h1{
+   text-align: center;
+    color: black;
+    letter-spacing: 5px;
+font-weight: 800;
+}
+.menu__link{
+    display: block;
+    text-align: center;
+    background-color: #0667a3;;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+    /*border-radius: 20px;*/
+    margin-left: auto;
+    margin-right: auto;
+   margin-bottom: 2px;
+   
+}
+.menu__item--active .menu__link {
+    text-decoration: underline;
+    text-underline-offset:0.5em;
+  }
+.menu__item{
+    list-style-type: none;
+  letter-spacing: 0.2em;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+.menu__list{
+    padding-left: 0;
+   /*  flex-grow: 1fr;*/
+}
+.bastill__formule,
+.bastill__race{
+max-width: 500px;
+}
+.bastill__race{
+width:100%;
+}
+
+.bastill__handy{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    color: #0667a3;
+    font-size: 25px;
+    text-align: center;
+}
+.uoah{
+    color: #0667a3;;
+    text-align: center;
+    font-weight:bold;
+    letter-spacing: 1em;
+    margin-bottom: 0;
+}
+.haf{
+    color: #0667a3;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+}
+
+.footer {
+    color: black;
+    font-weight: 500;
+    background-color: #0667a3;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    margin: 0 10px;
+}
+.link {
+    color: #4f2d2d;
+}
+.image,
+.image--centre{
+  display: block;
+  max-width: 100%;
+}
+
+.aboutme{
+    color: #0667a3;
+    font-size: 25px;
+    text-align: center;
+}
+
+.clanek{
+    display: grid;
+    grid-template-columns: 150px 150px;
+        margin: 5px;
+    }
+    .clanek img{
+      max-width:100%;
+    }
+    .article__image{
+        display: none;
+    
+      }
+      
+      .clanek__popis{
+        color: #0667a3;
+        font-size: 15px;
+    }
+
+
+    .article__title{
+        font-size: 50px;
+        margin: 0;
+        color: #0667a3;
+      }
+      
+       
+      .article__content {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 20px;
+      }
+      
+      .article__perex {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+  
+
+iframe{
+    max-width: 100%;
+}
+.reference,
+.web__reference{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    color: #0667a3;
+
+}
+.web_reference--comment{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-style: italic;
+    color: #0667a3;
+    
+}
+
+}
+/***********************************************************************************************************************/
+/*DESKTOPOVÁ VERZE*/
+@media screen and (min-width: 640px){
+    .head{
+        display: flex;
+        margin: 20px;
+    }
+    .head__img{
+        max-width: 150px;
+        border-radius: 50%
+    }
+    .head__title{
+        margin-left: 100px;
+        margin-top: 50px;  
+        letter-spacing: 0.5em; 
+        color: #0667a3;
+    }
+    
+
+
+
+.menu {
+    background-color: #0667a3;
+    font-size: 20px;
+  }
+  
+  .menu__list {
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .menu__item:not(:last-child) {
+    border-right: 2px groove #0a7fc8;
+    
+  }
+  
+  .menu__link {
+    display: block;
+    padding: 15px 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu__item--active .menu__link {
+    text-decoration: underline;
+    text-underline-offset:0.5em;
+  }
+  .menu__item{
+    list-style-type: none;
+  letter-spacing: 0.4em;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+article{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #0667a3;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+   
+}
+.clanek__popis{
+    color: #0667a3;
+    font-size: 25px;
+}
+.uoah{
+    color: #0667a3;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.haf{
+    color: #0667a3;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+}
+.footer {
+    color: black;
+    font-weight: 500;
+    background-color: #0667a3;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    margin: 0 10px;
+}
+.link {
+    color: #4f2d2d;
+}
+
+
+.bastill__formule,
+.bastill__race{
+max-width: 800px;
+
+}
+.bastill__handy{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bastill__race{
+    width: 600px;
+    margin-top: 50px;
+}
+
+.clanek{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+   
+    margin: 5px;
+    }
+    .clanek img{
+      width:100%;
+    }
+    .article__image {
+        display: none;
+    
+      }
+
+.ferrari{
+    max-width: 400px;
+}
+
+.aboutme{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #0667a3;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.image--center{
+    display: flex;
+    max-width: 320px;
+    
+    }
+
+.reference,
+.web__reference{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0667a3;  
+  }
+
+.web__reference{
+    padding-bottom: 0px;
+    margin-top: 52px;
+    margin-bottom: 0px;
+    margin-left: 0;
+  
+}
+  
+.reference::before{
+    content: url(/images/icons8-f1-car-50-1.png);https://www.formula1.com/
+    margin-right: 20px;
+    height: 30px;
+    position: relative;
+    left: -5px;
+    top: 5px;
+  
+    
+}
+.web__reference::before{
+    content: url(/images/icons8-web-50-1.png);
+    margin-right: 20px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    
+}
+
+.web_reference--comment{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-style: italic;
+    color: #0667a3;
+    
+}
+.bastill__background{
+    background-image: url(/images/BasJede.png);
+    display: block;
+    max-width:1400px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: top-left;
+    background-size: 80%;
+}
+.reference__all{
+    position: relative;
+    top: 450px;
+}
+
+/*
+.bastill__back{
+    background-image: url(/images/BasVeFormuli.png);
+    display: block;
+    max-width:1400px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: top-left;
+    background-size: 100%;
+}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
